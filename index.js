@@ -26,3 +26,12 @@ app.post("/api/chat", async (req, res) => {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`
             },
+             body: JSON.stringify({
+                model: "openrouter/free",
+                messages: messages,
+                temperature: 0.7,
+                max_tokens: 1000,
+                stream: true
+            })
+        });
+            
