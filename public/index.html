@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic AI Chatbot</title>
+    <!-- Hubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- Header Chatbot -->
+        <div class="chat-header">
+            <div class="bot-avatar">
+                <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <div class="bot-info">
+                <h2>Chatbot AI</h2>
+                <p>Aesthetic Assistant 🌸</p>
+            </div>
+        </div>
+
+        <!-- Area Pesan Chat -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    Halo! Ada yang bisa saya bantu hari ini? ✨
+                </div>
+            </div>
+        </div>
+
+        <!-- Area Input Pesan -->
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Ketik pesan..." autocomplete="off">
+            <button id="sendBtn">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
