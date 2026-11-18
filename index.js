@@ -20,4 +20,9 @@ app.post("/api/chat", async (req, res) => {
         if (!messages || !Array.isArray(messages)) {
             return res.status(400).json({ error: "Messages harus berupa array" });
         }
-
+        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`
+            },
